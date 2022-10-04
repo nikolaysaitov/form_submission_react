@@ -81,7 +81,7 @@
   margin-bottom: 16px;
   cursor: pointer;
 }
-.swal2-confirm swal2-styled {
+.swal2-confirm .swal2-styled {
   background-color: #3456f3;
 }
 
