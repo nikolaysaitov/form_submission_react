@@ -31,7 +31,7 @@
   align-items: flex-start;
 }
 
-.form__text {
+.form__text{
   font-family: Inter;
   font-size: 10px;
   font-weight: 400;
@@ -53,6 +53,7 @@
 }
 
 .form__input {
+  font-family: Inter;
   width: 100%;
   padding: 15px;
   border: none;
@@ -62,6 +63,28 @@
   background-color: #f4f4f4;
   margin-bottom: 20px;
 }
+
+.textarea {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+  width: 100%;
+  height: 45px;
+  background: #3456f3;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  margin-top: 69px;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+.swal2-confirm swal2-styled {
+  background-color: #3456f3;
+}
+
 
 .form__submit {
   font-family: Inter;
