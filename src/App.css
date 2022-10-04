@@ -1,38 +1,119 @@
-.App {
-  text-align: center;
+.container {
+  box-sizing: content-box;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.logo {
+  cursor: pointer;
+}
+.form__container {
+  max-width: 396px;
+  padding: 70px 0px 70px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form__hello {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: flex-start;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.form__logo {
+  width: 38px;
+  height: 38px;
+  margin-bottom: 40px;
+}
+
+.form__register {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form__text {
+  font-family: Inter;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #a0a0a0;
+  margin-bottom: 10px;
+}
+
+.form__header {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.form__input {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+  margin-bottom: 20px;
+}
+
+.form__submit {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+  width: 100%;
+  height: 45px;
+  background: #3456f3;
   color: white;
+  border: none;
+  border-radius: 3px;
+  margin-top: 69px;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+.form__submit-off {
+  opacity: 0.4;
+  cursor: default;
+}
+.authorization__text {
+  align-self: center;
+  color: #a0a0a0;
+}
+.authorization__text_link {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+
+  text-decoration: none;
+  color: #3456f3;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 768px) {
+  .form__container {
+    padding: 232px 186px 232px;
   }
-  to {
-    transform: rotate(360deg);
+  .authorization__text {
+    text-align: center;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+  .form__container {
+    padding: 56px 30px 30px;
+  }
+  .form__submit {
+    margin-top: 157px;
   }
 }
